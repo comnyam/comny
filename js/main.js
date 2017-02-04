@@ -4,8 +4,8 @@ $(document).ready(function() {
     email.html('mail' + at + window.location.hostname);
     $('.email').attr('href', 'mailto:' + email.html());
     $('.top-background').flowtype({
-       minimum : 1,
-       maximum : 600
+       minimum : 1000,
+       maximum : 1600
     });
     /*
     $('a[href="#"]').on('click', function (e) {
