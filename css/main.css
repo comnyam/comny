@@ -51,15 +51,13 @@ width: 100%;
 #social {
     text-align: center;
     font-size: 2.3em;
-    font-weight: 300;
-    padding: 1.5em 0;
+    padding: 1.75em 0;
 }
 #social ul {
 	text-align: center;
     list-style-type: none;
-    margin: 0;
+    margin: 0.75em 0 0 0;
     padding: 0;
-    overflow: hidden;
 }
 #social ul li {
 	display: inline-block;
@@ -67,12 +65,13 @@ width: 100%;
 }
 #slider {
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 #slider ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 #slider ul li {
 	display: inline-block;
@@ -82,7 +81,7 @@ width: 100%;
 #contacts {
     text-align: center;
     font-size: 2em;
-    padding: 1.5em 0;
+    padding: 1.75em 0;
     font-family: 'Philosopher', sans-serif;
     font-style: italic;
 }
