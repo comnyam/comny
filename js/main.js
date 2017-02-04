@@ -1,8 +1,7 @@
 $(document).ready(function() {
     let at = '@';
     let email = $('.email');
-    //email.html('mail' + at + window.location.hostname);
-    email.html('mail@comny.ru');
+    email.html('mail' + at + window.location.hostname);
     $('.email').attr('href', 'mailto:' + email.html());
     $('.top-background').flowtype({
        minimum : 1000,

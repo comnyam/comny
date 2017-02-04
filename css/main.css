@@ -30,17 +30,6 @@ p {
 a.text-white:hover {
     color: #777;
 }
-
-#header-row {
-    background: rgba(0, 0, 0, 0);
-    padding: 0.7em;
-    border: none;
-}
-#phone {
-    font-size: 1.5em;
-    color: #fff;
-    text-decoration: none;
-}
 .top-background {
     background: rgba(0, 0, 0, 0) url(../images/top-background.jpg)
         no-repeat center scroll;
@@ -50,24 +39,14 @@ a.text-white:hover {
     font-size: 3em;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+width: 100%;
 }
 #hero-container {
-    margin: 20% 15%;
+    margin: 20% 0;
     text-align: center;
 }
 #hero-empty {
-    width: 1024px;
-    height: 100%;
-}
-#hero .subtitle {
-    font-size: 0.5em;
-    padding: 1.75em 0 0.5em 0;
-}
-#hero .btn {
-    text-shadow: none;
-}
-#glav {
-    margin: 2.5em 0;
+    height: 250px;
 }
 #social {
     text-align: center;
@@ -204,7 +183,7 @@ figure:hover+span {
 @media (max-width: 1023px) /* @grid-float-breakpoint -1 */
 {
     #hero-container {
-        margin: 20% 2.5%;
+        margin: 20% 0;
     }
 }
 @media (max-width: 767px) /* @grid-float-breakpoint -1 */
@@ -220,7 +199,7 @@ figure:hover+span {
         text-align: center;
     }
     #hero-container {
-        margin: 10% 2.5%;
+        margin: 10% 0;
     }
     .top-background {
         background-size: 112%;
@@ -237,6 +216,6 @@ figure:hover+span {
 @media (max-width: 479px) /* @grid-float-breakpoint -1 */
 {
     #hero-container {
-        margin: 6.5% 2.5%;
+        margin: 1% 0;
     }
 }
