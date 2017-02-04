@@ -52,7 +52,7 @@ width: 100%;
     text-align: center;
     font-size: 2.3em;
     font-weight: 300;
-    padding: 1em 0;
+    padding: 1.5em 0;
 }
 #social ul {
 	text-align: center;
@@ -82,7 +82,7 @@ width: 100%;
 #contacts {
     text-align: center;
     font-size: 2em;
-    padding: 1em 0;
+    padding: 1.5em 0;
     font-family: 'Philosopher', sans-serif;
     font-style: italic;
 }
