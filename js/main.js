@@ -20,9 +20,8 @@ $(document).ready(function() {
 
     var slider = $('#slider').tinycarousel({
         interval: true,
-        buttons: false,
         infinite: true,
-        intervalTime: 1000
+        intervalTime: 2500
     }).data('plugin_tinycarousel');
 
     var popover = $('[data-toggle="popover"]');
