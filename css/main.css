@@ -54,10 +54,29 @@ width: 100%;
     font-weight: 300;
     padding: 1em 0;
 }
+#slider {
+    width: 100%;
+	white-space: nowrap;
+}
+#slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#slider ul li {
+	display: inline-block;
+	margin: 0 -3px;
+}
+#slider ul li img {
+	margin: 0;
+	padding: 0;
+}
+
 #contacts {
     text-align: center;
     font-size: 2em;
-    padding: 0 0 1em 0;
+    padding: 1em 0;
     font-family: 'Philosopher', sans-serif;
     font-style: italic;
 }
@@ -116,70 +135,6 @@ figure:hover+span {
     -moz-border-radius: 16px;
 }
 
-/* Tiny Carousel */
-#slider {
-    background: #efefef;
-    height: 1%;
-    margin: 30px 0;
-    overflow: hidden;
-    position: relative;
-    padding: 0px 46px;
-}
-
-#slider .viewport {
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-}
-
-#slider .buttons {
-    background: #aaa;
-    color: #ddd;
-    border-radius: 35px;
-    display: block;
-    position: absolute;
-    top: 45%;
-    left: 5px;
-    width: 35px;
-    height: 35px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 35px;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-#slider .next {
-    right: 5px;
-    left: auto;
-    top: 45%;
-}
-
-#slider .buttons:hover {
-    color: #aaa;
-    background: #ccc;
-}
-
-#slider .disable {
-    visibility: hidden;
-}
-
-#slider .overview {
-    list-style: none;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    width: 250px;
-    left: 0;
-    top: 0;
-}
-
-#slider .overview li {
-    float: left;
-    margin: 0 0px 0 0;
-    padding: 1px;
-    width: 250px;
- }
 @media (max-width: 1023px) /* @grid-float-breakpoint -1 */
 {
     #hero-container {

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
     let at = '@';
     let email = $('.email');
     email.html('mail' + at + window.location.hostname);
@@ -18,53 +18,49 @@ $(document).ready(function() {
     });
     */
 
-    var slider = $('#slider').tinycarousel({
-        interval: true,
-        infinite: true,
-        intervalTime: 2500
-    }).data('plugin_tinycarousel');
-
-    var popover = $('[data-toggle="popover"]');
-    popover.popover();
-    popover.on('show.bs.popover', function () {
-        slider.stop();
-    });
-    popover.on('hidden.bs.popover', function () {
-        slider.start();
+    $('.marquee').marquee({
+        duration: 30000,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: 'right',
+        duplicated: true,
+        startVisible: true,
+        pauseOnHover: true,
+        allowCss3Support: false
     });
 
     $('.fancybox-media').fancybox({
-		maxWidth	: 768,
-		maxHeight	: 1024,
+        maxWidth    : 768,
+        maxHeight    : 1024,
         padding     : 2,
-		fitToView	: false,
-		width		: '95%',
-		height		: '95%',
-		autoSize	: false,
-		closeClick	: true,
-		openEffect	: 'fade',
-		closeEffect	: 'fade',
-        helpers		: {
-			title	: { type : 'inside' },
-			buttons	: {}
-		}
-	});
+        fitToView    : false,
+        width        : '95%',
+        height        : '95%',
+        autoSize    : false,
+        closeClick    : true,
+        openEffect    : 'fade',
+        closeEffect    : 'fade',
+        helpers        : {
+            title    : { type : 'inside' },
+            buttons    : {}
+        }
+    });
 
     var imageTpl = '<img class="fancybox-image" src="{href}" alt="" />' +
         '<div class="thumb-number">{number}</div>';
     $('.fancybox-thumbnail').fancybox({
-		prevEffect	: 'fade',
-		nextEffect	: 'fade',
-        openEffect	: 'fade',
-		closeEffect	: 'fade',
-        maxWidth	: 1024,
-		maxHeight	: 768,
+        prevEffect    : 'fade',
+        nextEffect    : 'fade',
+        openEffect    : 'fade',
+        closeEffect    : 'fade',
+        maxWidth    : 1024,
+        maxHeight    : 768,
         padding     : 0,
-		helpers	    : {
-			title	: {
-				type: 'over'
-			}
-		},
+        helpers        : {
+            title    : {
+                type: 'over'
+            }
+        },
         afterLoad: function() {
             var number = $(this.element).attr('data-number');
             $.extend(true, this, {
@@ -79,7 +75,7 @@ $(document).ready(function() {
                     return false;
             });
         }
-	});
+    });
     $('.fancybox-thumbnail').bind('contextmenu', function (e) {
             return false;
     });
