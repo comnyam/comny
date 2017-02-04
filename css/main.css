@@ -69,11 +69,18 @@ a.text-white:hover {
 #glav {
     margin: 2.5em 0;
 }
+#social {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 1em 0;
+}
 #contacts {
     text-align: center;
     font-size: 2em;
-    font-style: italic;
     padding: 0 0 1em 0;
+    font-family: 'Philosopher', sans-serif;
+    font-style: italic;
 }
 #contacts a {
     color: #000;
@@ -87,25 +94,25 @@ a.text-white:hover {
 }
 
 figure {
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
 }
 figure:hover+span {
-	bottom: -36px;
-	opacity: 1;
+    bottom: -36px;
+    opacity: 1;
 }
 
 .zoom-out figure img {
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 .zoom-out figure:hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 .thumb-number {
     float: right;
