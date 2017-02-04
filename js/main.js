@@ -1,8 +1,13 @@
 $(document).ready(function() {
+    let at = '@';
+    let email = $('.email');
+    email.html('mail' + at + window.location.hostname);
+    $('.email').attr('href', 'mailto:' + email.html());
     $('.top-background').flowtype({
        minimum : 1,
        maximum : 600
     });
+    /*
     $('a[href="#"]').on('click', function (e) {
         e.preventDefault();
 
@@ -11,10 +16,13 @@ $(document).ready(function() {
         }, 500);
 
     });
+    */
 
     var slider = $('#slider').tinycarousel({
         interval: true,
-        intervalTime: 2000
+        buttons: false,
+        infinite: true,
+        intervalTime: 1000
     }).data('plugin_tinycarousel');
 
     var popover = $('[data-toggle="popover"]');
